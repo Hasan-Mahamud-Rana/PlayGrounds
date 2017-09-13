@@ -1,0 +1,36 @@
+/* simple reset */
+
+
+div#inked-painted { position: relative; font-size: 0; }
+
+div#inked-painted img { width: 35%; height: auto; }
+
+div#colored {
+
+ background-image:url("2.png");
+
+ position: absolute;
+
+ top: 0; left: 0; height: 100%;
+
+ width: 35%;
+
+ background-size: cover;
+
+}
+
+div#inked-painted:hover { cursor: col-resize; }
+
+
+div#inked-painted {
+
+ position: relative; font-size: 0;
+
+ -ms-touch-action: none;
+
+ -webkit-touch-callout: none;
+
+ -webkit-user-select: none;
+
+}
+

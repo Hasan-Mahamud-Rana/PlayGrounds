@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+p, a, label, ul, ol, dl, li, .top-bar-section ul li > a, button, .button, .accordion .accordion-navigation > a, .accordion dd > a, table, tr, td, thead {
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Titillium Web', sans-serif;
+}
+h4 a{
+  font-size: 1.2rem;
+}
+header {
+    padding: 15px 0;
+    border-color: #cdcdcd;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    background: #ffffff;
+    background-image: url(../img/particles.png);
+    background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+}
+.contain-to-grid{
+    background: #ffffff;
+    background-image: url(../img/particles.png);
+    background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+}
+.fixed{
+  background-position: top center;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+body {
+    background: #eaeaea;
+}
+a.logo {
+    display: block;
+    height: 45px;
+    width: 250px;
+    background: url(../img/BordingVista.png) no-repeat;
+    background-size: contain;
+}
+.top-bar {
+    background: none;
+ 
+}
+.panel{
+  background: rgb(245, 245, 245)
+}
+table.p{  
+  margin-top: 20px;
+  }
+
+table.p thead {
+  background-color: #008CBA;
+}
+table.p thead h1, table.p thead h2, table.p thead h3, table.p thead h4, table.p thead h5, table.p thead h6, table.p thead p, table.p thead a{ color: #ffffff; }
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+  background: #EAEAEA !important;
+}
+table.p tr:last-child td:first-child {
+    color: #f00;
+}
+span.small {
+    font-size: 0.4em;
+}
+.questions{
+  background: #008CBA;
+  color: #ffffff;
+  text-align: left;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 1px 0 1px 0;
+  line-height: 1.8;
+}
+.questions h1{
+  text-align: center;
+  color: #ffffff;
+}
+.questions h6{
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: #D5D5D5;
+}
+.showcase {
+    padding: 20px 0;
+}
+.shwl{
+  border-width: 1px 0 1px 1px;
+}
+.shwr{
+  border-width: 1px 1px 1px 0;
+}
+.workflow {
+    background-color: #ffffff;
+    text-align: center;    
+    border-color: #cdcdcd;    
+    border-style: solid;    
+    border-width: 1px 0 0 0;
+    padding: 20px 0;
+}
+.promo {
+  background: #ffffff;
+  padding: 20px 0 0 0;
+}
+.promo h4{ 
+  text-align: center;
+}
+.apply {
+  background: #1eaace;
+  color: #ffffff;
+  text-align: center;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-width: 1px 0 1px 0;
+}
+.apply h3 {
+    color: #ffffff;
+}
+footer {
+  color: #b0b0b0;
+  background-color: #ffffff;
+  text-align: center;
+  border-color: #cdcdcd;    
+  border-style: solid;    
+  border-width: 0 0 1px 0;
+  padding: 20px 0  30px 0;
+}
+footer h1 {
+  color: #b0b0b0;
+}
+copyright .row{
+  padding:20px 0;
+  text-align: center;
+}
+/* Float Shadow */
+.large-4.small-12.columns {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.large-4.small-12.columns:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 93%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.large-4.small-12.columns:hover, .large-4.small-12.columns:focus, .large-4.small-12.columns:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.large-4.small-12.columns:hover:before, .large-4.small-12.columns:focus:before, .large-4.small-12.columns:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+ul.list-checked li:before {
+    content: '✔';         margin-left: -1em; margin-right: .100em;
+}
+
+ul.list-checked {
+    list-style: none;     list-style-position:outside;
+}
+ul.slick-dots {
+  margin: 0;
+  bottom: -25px;
+
+}
+ul.address-list li{
+  width: 19%;
+  float: left;
+  list-style: none;
+  font-size: .8em;
+}
+li.accordion-navigation:last-child a {
+    color: #f00;
+}
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+  background: #77c043;
+}
+.accordion .accordion-navigation.active > a, .accordion dd.active > a {
+  background: #77c043;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #FFFFFF;
+}
+.top-bar-section ul li > a {
+  color: #000000;
+}
+
+
+.capabilities .line-header {
+    padding-top: 18px;
+}
+.capabilities {
+    margin: 0 20px;
+    padding-bottom: 50px;
+}
+.line-header {
+    height: 35px;
+}
+.capabilities ul {
+    float: left;
+    margin-bottom: 1px;
+}
+.capabilities ul li {
+    float: none;
+    list-style: none;
+}
+.capabilities .c-item {
+    background-color: #006db8;
+    color: #fff;
+    width: 174px;
+}
+ .capabilities .c-item,.capabilities .c-item-text {
+    padding: 11px;
+    white-space: nowrap;
+}
+.capabilities li li {
+    float: left;
+}
+.t-all {
+    transition: all 250ms ease-in-out 0s;
+}
+.capabilities .panel{overflow: hidden;}

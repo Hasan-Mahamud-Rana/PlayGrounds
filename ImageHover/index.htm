@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0079)http://spoonfedproject.com/wp-content/uploads/demo/jquery-slide-hover/index.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>jQuery image slide on hover effect</title>
+<link href="./jQuery image slide on hover effect_files/style.css" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="./jQuery image slide on hover effect_files/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	// Vertical
+	$("#vertical div a").hover(function(){
+		$("img", this).stop().animate({top:"-130px"},{queue:false,duration:200});
+	}, function() {
+		$("img", this).stop().animate({top:"0px"},{queue:false,duration:200});
+	});
+	// Horizontal
+	$("#horizontal div a").hover(function(){
+		$("img", this).stop().animate({left:"-296px"},{queue:false,duration:200});
+	}, function() {
+		$("img", this).stop().animate({left:"0px"},{queue:false,duration:200});
+	});
+});
+</script>
+</head>
+<body>
+	<div id="vertical" class="clear"><!-- Vertical -->
+		<h1>jQuery image slide on hover effect (vertical)</h1>
+		<div><a href="http://spoonfedproject.com/wp-content/uploads/demo/jquery-slide-hover/index.htm#"><img src="./jQuery image slide on hover effect_files/image-1.jpg" alt="" style="top: 0px;"></a></div>
+	  <div><a href="http://spoonfedproject.com/wp-content/uploads/demo/jquery-slide-hover/index.htm#"><img src="./jQuery image slide on hover effect_files/image-2.png" alt="" style="top: 0px;"></a></div>
+		<div><a href="http://spoonfedproject.com/wp-content/uploads/demo/jquery-slide-hover/index.htm#"><img src="./jQuery image slide on hover effect_files/image-3.jpg" alt="" style="top: 0px;"></a></div>
+	</div>
+	<div id="horizontal" class="clear"><!-- Horizontal -->
+		<h1>jQuery image slide on hover effect (horizontal)</h1>
+		<div><a href="http://spoonfedproject.com/wp-content/uploads/demo/jquery-slide-hover/index.htm#"><img src="./jQuery image slide on hover effect_files/image-4.jpg" alt="" style="left: 0px;"></a></div>
+		<div><a href="http://spoonfedproject.com/wp-content/uploads/demo/jquery-slide-hover/index.htm#"><img src="./jQuery image slide on hover effect_files/image-5.png" alt="" style="left: 0px;"></a></div>
+		<div><a href="http://spoonfedproject.com/wp-content/uploads/demo/jquery-slide-hover/index.htm#"><img src="./jQuery image slide on hover effect_files/image-6.jpg" alt="" style="left: 0px;"></a></div>
+	</div>
+
+
+</body></html>

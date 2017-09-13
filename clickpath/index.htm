@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>jQuery image slide on hover effect</title>
+<link href="./jQuery image slide on hover effect_files/style.css" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="./jQuery image slide on hover effect_files/jquery.min.js"></script>
+
+</head>
+<body>
+	
+<div id="inked-painted">
+
+ <img src="1.png" id="inked" alt>
+
+ <div id="colored"></div>
+
+</div>
+
+</body></html>
+<script type="text/javascript">
+
+
+var inkbox = document.getElementById("inked-painted");
+
+var colorbox = document.getElementById("colored");
+
+var fillerImage = document.getElementById("inked");
+
+inkbox.addEventListener( "mousemove", trackLocation, false);
+
+function trackLocation(e) {
+
+ var rect = inked.getBoundingClientRect();
+
+ var position = ((e.pageX - rect.left) / inked.offsetWidth)*35;
+
+ if (position <= 35) { colorbox.style.width = position+"%"; }
+
+}
+
+
+inkbox.addEventListener( "touchstart", trackLocation, false);
+
+inkbox.addEventListener( "touchmove", trackLocation, false);
+
+
+
+</script>
